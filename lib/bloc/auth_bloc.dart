@@ -142,4 +142,5 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     return prefs
         .getString('token'); // Will return null if 'token' doesn't exist
   }
+  
 }

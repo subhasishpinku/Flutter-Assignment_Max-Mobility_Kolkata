@@ -25,7 +25,7 @@ class ProfileScreen extends StatelessWidget {
             icon: const Icon(Icons.logout),
             onPressed: () {
               context.read<AuthBloc>().add(LogoutUser());
-              Navigator.pushReplacement(
+              Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => const LoginScreen(),
@@ -168,7 +168,7 @@ class ProfileScreen extends StatelessWidget {
 
             print("Latitude: $latitude");
             print("Longitude: $longitude");
-            Navigator.pushReplacement(
+            Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) =>

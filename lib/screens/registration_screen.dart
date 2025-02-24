@@ -153,7 +153,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pushReplacement(
+            Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => const LoginScreen(),

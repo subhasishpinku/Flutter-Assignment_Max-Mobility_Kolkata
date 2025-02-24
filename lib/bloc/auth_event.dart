@@ -27,3 +27,5 @@ class LoadProfile extends AuthEvent {
   final String email;
   LoadProfile(this.email);
 }
+
+
